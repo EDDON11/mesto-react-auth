@@ -207,6 +207,9 @@ function App() {
           setLoggedIn(true);
           setLoginData(res.data);
         }
+      })
+      .catch((err) => {
+        console.log(err);
       });
     }
   }, []);
